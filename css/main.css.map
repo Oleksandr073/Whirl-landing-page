@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "AGEA,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,CAAC;AACD,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,MAAM,CAAC;EACJ,UAAU,EAAE,OAAO;CACtB;;AAID,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,CAAC,CAAC;EACE,UAAU,EAAE,CAAC;EACb,aAAa,EAAE,CAAC;CACnB;;AAED,AAAA,EAAE,CAAC;EACC,eAAe,EAAE,IAAI;EACrB,UAAU,EAAE,CAAC;EACb,aAAa,EAAE,CAAC;EAChB,YAAY,EAAE,CAAC;CAClB;;AC5BD,AAAA,gBAAgB,CAAC;EACb,QAAQ,EAAE,QAAQ;EAClB,WAAW,EAAE,MAAM;EACnB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,QAAQ,EAAE,MAAM;EAChB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,IAAI,EAAE,aAAa;EACnB,SAAS,EAAE,UAAU;EACrB,MAAM,EAAE,IAAI;CACf;;ACXD,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,CAAC;EACT,WAAW,EAAE,wBAAwB;EACrC,WAAW,EAAE,CAAC;EACd,gBAAgB,EAAE,OAAO;CAC5B;;ACLD,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,MAAM;EACjB,OAAO,EAAE,MAAM;EACf,MAAM,EAAE,MAAM;CACjB;;AELD,AAAA,KAAK,CAAC;EACF,QAAQ,EAAE,MAAM;CACnB",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/utils/_mixins.scss",
+        "../sass/components/_nulling.scss",
+        "../sass/components/_visually-hidden.scss",
+        "../sass/components/_body.scss",
+        "../sass/components/_container.scss",
+        "../sass/components/_header.scss",
+        "../sass/components/_main.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
