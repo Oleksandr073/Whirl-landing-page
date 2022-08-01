@@ -1,0 +1,64 @@
+.header {
+    padding: 20px 0;
+
+    // .header__container
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .header__nav
+
+    &__nav {
+        display: flex;
+    }
+
+    // .header__logo
+
+    &__logo {
+        margin-right: 36px;
+    }
+
+    // .header__nav-items
+
+    &__nav-items {
+        display: flex;
+        align-items: center;
+    }
+
+    // .header__nav-item
+
+    &__nav-item {
+        @include fontSizeLineHeight(15px, 24px);
+        letter-spacing: 0.2px;
+
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+    }
+
+    // .header__nav-link
+
+    &__nav-link {
+        color: #33383F;
+
+        text-decoration: none;
+    }
+
+    // .header__buttons
+
+    &__buttons {
+        display: flex;
+    }
+
+    // .header__button
+
+    &__button {
+
+        &:not(:last-child) {
+            margin-right: 11px;
+        }
+    }
+}
