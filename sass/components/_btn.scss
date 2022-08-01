@@ -1,0 +1,18 @@
+.btn {
+    padding: 6px 20px;
+    border: none;
+
+    color: #ffffff;
+    background: #0070A0;
+
+    cursor: pointer;
+
+    font: inherit;
+    @include fontSizeLineHeight(15px, 24px);
+    letter-spacing: 0.2px;
+
+    &--secondary {
+        color: #0070A0;
+        background: #ffffff;
+    }
+}
