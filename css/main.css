@@ -43,6 +43,7 @@ ul {
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
+  letter-spacing: 0.2px;
   line-height: 1;
   background-color: #F5F5F5;
 }
@@ -68,7 +69,7 @@ body {
   font: inherit;
   font-size: 15px;
   line-height: 1.6;
-  letter-spacing: 0.2px;
+  letter-spacing: inherit;
 }
 
 .btn--secondary {
@@ -114,7 +115,6 @@ body {
 .header__nav-item {
   font-size: 15px;
   line-height: 1.6;
-  letter-spacing: 0.2px;
 }
 
 .header__nav-item:not(:last-child) {
@@ -138,5 +138,65 @@ body {
 
 .main {
   overflow: hidden;
+}
+
+.hero {
+  padding: 70px 0 92px 0;
+}
+
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__content {
+  width: 50%;
+  padding-right: 40px;
+}
+
+.hero__title {
+  margin-bottom: 24px;
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.10345;
+  color: #1F1F1F;
+}
+
+.hero__subtitle {
+  margin-bottom: 29px;
+  padding-right: 170px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.hero__button {
+  margin-right: 24px;
+  padding: 8px 32px;
+  font-size: 17px;
+  line-height: 1.58824;
+}
+
+.hero__link {
+  margin-right: 8px;
+  color: #0070A0;
+  text-decoration: none;
+}
+
+.hero__arrow {
+  width: 11px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.hero__photo {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
