@@ -77,6 +77,12 @@ body {
   background: #ffffff;
 }
 
+.btn--big {
+  padding: 8px 32px;
+  font-size: 17px;
+  line-height: 1.58824;
+}
+
 .header {
   padding: 20px 0;
 }
@@ -179,9 +185,6 @@ body {
 
 .hero__button {
   margin-right: 24px;
-  padding: 8px 32px;
-  font-size: 17px;
-  line-height: 1.58824;
 }
 
 .hero__link {
@@ -198,5 +201,41 @@ body {
 
 .hero__photo {
   display: block;
+}
+
+.companies__container {
+  text-align: center;
+}
+
+.companies__title {
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 1.58333;
+  font-weight: 400;
+  color: #1F1F1F;
+}
+
+.companies__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.companies__item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.companies__link {
+  display: inline-block;
+}
+
+.companies__logo {
+  fill: #969FA4;
 }
 /*# sourceMappingURL=main.css.map */

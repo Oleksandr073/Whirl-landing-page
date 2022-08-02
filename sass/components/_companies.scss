@@ -1,0 +1,51 @@
+.companies {
+
+    // .companies__container
+
+    &__container {
+        text-align: center;
+    }
+
+    // .companies__title
+
+    &__title {
+        margin-bottom: 24px;
+
+        @include fontSizeLineHeight(24px, 38px);
+        font-weight: 400;
+
+        color: $textColor;
+    }
+
+    // .companies__list
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // .companies__item
+
+    &__item {
+        // height: 36px;
+
+        &:not(:last-child) {
+            margin-right: 60px;
+        }
+    }
+
+    // .companies__link
+
+    &__link {
+        display: inline-block;
+    }
+
+    // .companies__logo
+
+    &__logo {
+        // height: 36px;
+
+        fill: #969FA4;
+    }
+}
