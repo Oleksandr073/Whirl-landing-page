@@ -16,4 +16,10 @@
         color: $accentColor;
         background: #ffffff;
     }
+
+    &--big {
+        padding: 8px 32px;
+        
+        @include fontSizeLineHeight(17px, 27px);
+    }
 }
