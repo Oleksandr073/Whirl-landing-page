@@ -255,6 +255,8 @@ body {
 
 .advantage__item {
   padding: 32px 32px 40px 32px;
+  -ms-flex-preferred-size: 33.33333%;
+      flex-basis: 33.33333%;
 }
 
 .advantage__item:not(:last-child) {
