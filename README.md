@@ -11,10 +11,10 @@
 
 ## Github Page 💻
 
-<a href="https://Oleksandr073.github.io/Whirl-landing-page/" target="_blank">https://Oleksandr073.github.io/Whirl-landing-page/</a>
+https://Oleksandr073.github.io/Whirl-landing-page/
 
 ## Template 👇
 
-<a href="https://www.figma.com/file/KXzj5MFY1DL7CFUfVHteN1/Whirl" target="_blank">https://www.figma.com/file/KXzj5MFY1DL7CFUfVHteN1/Whirl</a>
+https://www.figma.com/file/KXzj5MFY1DL7CFUfVHteN1/Whirl
 
 <img alt="Visual Studio Code" width="100%" src="./Whirl.jpg"/>
