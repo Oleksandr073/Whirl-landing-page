@@ -24,8 +24,6 @@
         font-family: 'Fraunces', serif;
         font-weight: 400;
         @include fontSizeLineHeight(58px, 64px);
-
-        color: $textColor;
     }
 
     // .hero__subtitle

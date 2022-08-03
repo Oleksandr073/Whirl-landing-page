@@ -46,6 +46,7 @@ body {
   letter-spacing: 0.2px;
   line-height: 1;
   background-color: #F5F5F5;
+  color: #1F1F1F;
 }
 
 .container {
@@ -173,7 +174,6 @@ body {
   font-weight: 400;
   font-size: 58px;
   line-height: 1.10345;
-  color: #1F1F1F;
 }
 
 .hero__subtitle {
@@ -201,6 +201,10 @@ body {
 
 .hero__photo {
   display: block;
+}
+
+.companies {
+  padding: 40px 0;
 }
 
 .companies__container {
@@ -237,5 +241,68 @@ body {
 
 .companies__logo {
   fill: #969FA4;
+}
+
+.advantage {
+  padding: 120px 0;
+}
+
+.advantage__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantage__item {
+  padding: 32px 32px 40px 32px;
+}
+
+.advantage__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.advantage__item::before {
+  content: '';
+  display: block;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 8px;
+}
+
+.advantage__item--fast {
+  background-color: #FAEA73;
+}
+
+.advantage__item--fast::before {
+  background-image: url("../img/advantage/advantage1.png");
+}
+
+.advantage__item--buck {
+  background-color: #CCEFF6;
+}
+
+.advantage__item--buck::before {
+  background-image: url("../img/advantage/advantage2.png");
+}
+
+.advantage__item--safe {
+  background-color: #F7CEDC;
+}
+
+.advantage__item--safe::before {
+  background-image: url("../img/advantage/advantage3.png");
+}
+
+.advantage__heading {
+  margin-bottom: 11px;
+  font-family: 'Fraunces', serif;
+  font-size: 25px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+.advantage__text {
+  font-size: 15px;
+  line-height: 1.6;
 }
 /*# sourceMappingURL=main.css.map */
