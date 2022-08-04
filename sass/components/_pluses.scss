@@ -1,0 +1,71 @@
+.pluses {
+    padding: 80px 0;
+
+    color: #ffffff;
+
+    background-color: #006B99;
+
+    // .pluses__container
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .pluses__photo
+
+    &__photo {}
+
+    // .pluses__content
+
+    &__content {
+        width: 40%;
+    }
+
+    // .pluses__title
+
+    &__title {
+        margin-bottom: 18px;
+    }
+
+    // .pluses__text
+
+    &__text {
+        margin-bottom: 20px;
+
+        @include fontSizeLineHeight(18px, 27px);
+    }
+
+    // .pluses__list
+
+    &__list {
+        margin-bottom: 16px;
+
+        @include fontSizeLineHeight(16px, 21.6px);
+    }
+
+    // .pluses__icon
+
+    &__icon {
+        width: 17px;
+        height: 10px;
+        margin-right: 5px;
+
+        stroke: #FFCCDD;
+    }
+
+    // .pluses__item
+
+    &__item {
+        
+        &:not(:last-child) {
+            margin-bottom: 11px;
+        }
+    }
+
+    // .pluses__button
+
+    &__button {
+        background-color: transparent;
+    }
+}

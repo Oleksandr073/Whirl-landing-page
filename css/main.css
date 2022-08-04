@@ -497,4 +497,54 @@ body {
   font-size: 15px;
   line-height: 1.6;
 }
+
+.pluses {
+  padding: 80px 0;
+  color: #ffffff;
+  background-color: #006B99;
+}
+
+.pluses__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pluses__content {
+  width: 40%;
+}
+
+.pluses__title {
+  margin-bottom: 18px;
+}
+
+.pluses__text {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.pluses__list {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.pluses__icon {
+  width: 17px;
+  height: 10px;
+  margin-right: 5px;
+  stroke: #FFCCDD;
+}
+
+.pluses__item:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+.pluses__button {
+  background-color: transparent;
+}
 /*# sourceMappingURL=main.css.map */

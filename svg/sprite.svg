@@ -84,5 +84,10 @@
     <path d="M1.71429 1.66663L9.00001 8.74996L16.2857 1.66663" stroke="#CECAC4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol> 
 
+<!-- pluses -->
+<symbol id="ok" viewBox="0 0 19 13" fill="none">
+    <path d="M18 1L6.66663 11L1 6.00004" stroke-width="1.6"/>
+</symbol>
+
 
 </svg>
