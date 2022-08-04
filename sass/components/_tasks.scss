@@ -1,0 +1,71 @@
+.tasks {
+    padding: 120px 0;
+
+    // .tasks__container
+
+    &__container {}
+
+    // .tasks__title
+
+    &__title {
+        margin-bottom: 18px;
+    }
+
+    // .tasks__subtitle
+
+    &__subtitle {
+        margin-bottom: 65px;
+    }
+
+    // .tasks__list
+
+    &__list {
+        display: flex;
+    }
+
+    // .tasks__item
+
+    &__item {
+        flex-basis: 25%;
+
+        &:not(:last-child) {
+            margin-right: 64px;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            width: 55px;
+            height: 55px;
+            margin-bottom: 8px;
+        }
+
+        &--learn::before {
+            background-image: url('../img/tasks/tasks1.png');
+        }
+
+        &--stay::before {
+            background-image: url('../img/tasks/tasks2.png');
+        }
+
+        &--automate::before {
+            background-image: url('../img/tasks/tasks3.png');
+        }
+
+        &--informed::before {
+            background-image: url('../img/tasks/tasks4.png');
+        }
+    }
+
+    // .tasks__heading
+
+    &__heading {
+        margin-bottom: 11px;
+    }
+
+    // .tasks__text
+
+    &__text {
+        @include fontSizeLineHeight(16px, 24px);
+    }
+}

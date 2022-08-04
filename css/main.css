@@ -334,7 +334,7 @@ body {
           align-items: center;
 }
 
-.services__items {
+.services__list {
   width: 450px;
 }
 
@@ -453,7 +453,7 @@ body {
   margin-right: 5%;
 }
 
-.about__items {
+.about__list {
   width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -546,5 +546,65 @@ body {
 
 .pluses__button {
   background-color: transparent;
+}
+
+.tasks {
+  padding: 120px 0;
+}
+
+.tasks__title {
+  margin-bottom: 18px;
+}
+
+.tasks__subtitle {
+  margin-bottom: 65px;
+}
+
+.tasks__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tasks__item {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.tasks__item:not(:last-child) {
+  margin-right: 64px;
+}
+
+.tasks__item::before {
+  content: '';
+  display: block;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 8px;
+}
+
+.tasks__item--learn::before {
+  background-image: url("../img/tasks/tasks1.png");
+}
+
+.tasks__item--stay::before {
+  background-image: url("../img/tasks/tasks2.png");
+}
+
+.tasks__item--automate::before {
+  background-image: url("../img/tasks/tasks3.png");
+}
+
+.tasks__item--informed::before {
+  background-image: url("../img/tasks/tasks4.png");
+}
+
+.tasks__heading {
+  margin-bottom: 11px;
+}
+
+.tasks__text {
+  font-size: 16px;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=main.css.map */
