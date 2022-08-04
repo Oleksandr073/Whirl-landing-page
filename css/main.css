@@ -683,4 +683,55 @@ body {
 .blog__item:not(:last-child) {
   margin-right: 32px;
 }
+
+.get {
+  padding: 80px 0;
+}
+
+.get__container {
+  padding-top: 64px;
+  padding-right: 64px;
+  padding-bottom: 50px;
+  padding-left: 64px;
+  background-color: #E6F7FF;
+}
+
+.get__title {
+  width: 50%;
+  margin-bottom: 18px;
+}
+
+.get__subtitle {
+  width: 50%;
+  margin-bottom: 33px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.get__button {
+  margin-bottom: 12px;
+}
+
+.get__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.get__item {
+  font-size: 13px;
+  line-height: 1.61538;
+  color: #626A72;
+}
+
+.get__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.get__icon {
+  width: 17px;
+  height: 10px;
+  margin-right: 5px;
+  stroke: #6D757C;
+}
 /*# sourceMappingURL=main.css.map */

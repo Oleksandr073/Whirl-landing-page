@@ -1,0 +1,64 @@
+.get {
+    padding: 80px 0;
+
+    // .get__container
+
+    &__container {
+        padding-top: 64px;
+        padding-right: 64px;
+        padding-bottom: 50px;
+        padding-left: 64px;
+
+        background-color: #E6F7FF;
+    }
+
+    // .get__title
+
+    &__title {
+        width: 50%;
+        margin-bottom: 18px;
+    }
+
+    // .get__subtitle
+
+    &__subtitle {
+        width: 50%;
+        margin-bottom: 33px;
+
+        @include fontSizeLineHeight(18px, 27px);
+    }
+
+    // .get__button
+
+    &__button {
+        margin-bottom: 12px;
+    }
+
+    // .get__list
+
+    &__list {
+        display: flex;
+    }
+
+    // .get__item
+
+    &__item {
+        @include fontSizeLineHeight(13px, 21px);
+
+        color: #626A72;
+
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+    }
+
+    // .get__icon
+
+    &__icon {
+        width: 17px;
+        height: 10px;
+        margin-right: 5px;
+
+        stroke: #6D757C;
+    }
+}
