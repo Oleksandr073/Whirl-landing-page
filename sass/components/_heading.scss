@@ -1,0 +1,5 @@
+.heading {
+    font-family: 'Fraunces', serif;
+    @include fontSizeLineHeight(25px, 31.25px);
+    font-weight: 400;
+}
