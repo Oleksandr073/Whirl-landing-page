@@ -1,0 +1,66 @@
+.about {
+    padding: 120px 0;
+
+    // .about__container
+
+    &__container {
+        display: flex;
+    }
+
+    // .about__title
+
+    &__title {
+        width: 25%;
+        margin-right: 5%;
+        // margin-right: 100px;
+    }
+
+    // .about__items
+
+    &__items {
+        width: 70%;
+        display: flex;
+    }
+
+    // .about__item
+
+    &__item {
+        flex-basis: 33.33333%;
+
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            width: 55px;
+            height: 55px;
+            margin-bottom: 8px;
+        }
+
+        &--place::before {
+            background-image: url('../img/about/about1.png');
+        }
+
+        &--alerts::before {
+            background-image: url('../img/about/about2.png');
+        }
+
+        &--safe::before {
+            background-image: url('../img/about/about3.png');
+        }
+    }
+
+    // .about__heading
+
+    &__heading {
+        margin-bottom: 11px;
+    }
+
+    // .about__text
+
+    &__text {
+        @include fontSizeLineHeight(15px, 24px);
+    }
+}

@@ -9,10 +9,7 @@
 
     &__title {
         // margin-bottom: 60px;
-
-        font-family: 'Fraunces', serif;
-        @include fontSizeLineHeight(42px, 50.4px);
-        font-weight: 400;
+        
     }
 
     // .services__content
@@ -53,6 +50,7 @@
         font: inherit;
         color: inherit;
         text-align: left;
+        letter-spacing: inherit;
         //
 
         width: 100%;
@@ -82,9 +80,23 @@
             display: inline-block;
             width: 32px;
             height: 32px;
-            margin-right: 16px;
+            margin-right: 16px;            
+        }
 
+        &--anti::before {
             background-image: url('../img/services/services1.png');
+        }
+
+        &--exchange::before {
+            background-image: url('../img/services/services2.png');
+        }
+
+        &--fully::before {
+            background-image: url('../img/services/services3.png');
+        }
+
+        &--plenty::before {
+            background-image: url('../img/services/services4.png');
         }
 
         &::after {

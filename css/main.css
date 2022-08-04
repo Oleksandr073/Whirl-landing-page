@@ -56,6 +56,20 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-family: 'Fraunces', serif;
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.heading {
+  font-family: 'Fraunces', serif;
+  font-size: 25px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
 .logo__icon {
   width: 106px;
   height: 37px;
@@ -297,10 +311,6 @@ body {
 
 .advantage__heading {
   margin-bottom: 11px;
-  font-family: 'Fraunces', serif;
-  font-size: 25px;
-  line-height: 1.25;
-  font-weight: 400;
 }
 
 .advantage__text {
@@ -310,13 +320,6 @@ body {
 
 .services {
   padding: 80px 0;
-}
-
-.services__title {
-  font-family: 'Fraunces', serif;
-  font-size: 42px;
-  line-height: 1.2;
-  font-weight: 400;
 }
 
 .services__content {
@@ -351,6 +354,7 @@ body {
   font: inherit;
   color: inherit;
   text-align: left;
+  letter-spacing: inherit;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,7 +385,22 @@ body {
   width: 32px;
   height: 32px;
   margin-right: 16px;
+}
+
+.services__button--anti::before {
   background-image: url("../img/services/services1.png");
+}
+
+.services__button--exchange::before {
+  background-image: url("../img/services/services2.png");
+}
+
+.services__button--fully::before {
+  background-image: url("../img/services/services3.png");
+}
+
+.services__button--plenty::before {
+  background-image: url("../img/services/services4.png");
 }
 
 .services__button::after {
@@ -417,5 +436,65 @@ body {
 
 .services__photo {
   display: block;
+}
+
+.about {
+  padding: 120px 0;
+}
+
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__title {
+  width: 25%;
+  margin-right: 5%;
+}
+
+.about__items {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__item {
+  -ms-flex-preferred-size: 33.33333%;
+      flex-basis: 33.33333%;
+}
+
+.about__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.about__item::before {
+  content: '';
+  display: block;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 8px;
+}
+
+.about__item--place::before {
+  background-image: url("../img/about/about1.png");
+}
+
+.about__item--alerts::before {
+  background-image: url("../img/about/about2.png");
+}
+
+.about__item--safe::before {
+  background-image: url("../img/about/about3.png");
+}
+
+.about__heading {
+  margin-bottom: 11px;
+}
+
+.about__text {
+  font-size: 15px;
+  line-height: 1.6;
 }
 /*# sourceMappingURL=main.css.map */
