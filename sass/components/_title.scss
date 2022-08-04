@@ -1,0 +1,5 @@
+.title {
+    font-family: 'Fraunces', serif;
+    @include fontSizeLineHeight(42px, 50.4px);
+    font-weight: 400;
+}
