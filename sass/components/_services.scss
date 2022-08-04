@@ -1,0 +1,132 @@
+.services {
+    padding: 80px 0;
+
+    // .services__container
+
+    &__container {}
+
+    // .services__title
+
+    &__title {
+        // margin-bottom: 60px;
+
+        font-family: 'Fraunces', serif;
+        @include fontSizeLineHeight(42px, 50.4px);
+        font-weight: 400;
+    }
+
+    // .services__content
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .services__items
+
+    &__items {
+        width: 450px;
+    }
+
+    // .services__item
+
+    &__item {
+        margin-bottom: 1px;
+        // padding: 18px 0;
+
+        position: relative;
+
+        border-top: 1px solid #C2CDD8;
+        border-bottom: 1px solid #C2CDD8;
+    }
+
+    // .services__button
+
+    &__button {
+        // nulling styles of button
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+        font: inherit;
+        color: inherit;
+        text-align: left;
+        //
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        
+        padding-top: 17px;
+        padding-right: 16px;
+        padding-bottom: 15px;
+        padding-left: 12px;
+
+        font-family: 'Fraunces', serif;
+        @include fontSizeLineHeight(21px, 25.2px);
+        font-weight: 400;
+
+        color: #626A72;
+
+        position: relative;
+        z-index: 2;
+
+        &[aria-expanded="true"] {
+            color: $textColor;
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            margin-right: 16px;
+
+            background-image: url('../img/services/services1.png');
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 18px;
+            height: 10px;
+            margin-left: auto;
+
+            background-image: url('../img/services/arrow-accordion.svg');
+        }     
+    }
+
+    // .services__text
+
+    &__text {
+        height: 0px;
+
+        @include fontSizeLineHeight(16px, 24px);
+
+        transition: all 400ms ease;
+
+        overflow: hidden;
+
+        visibility: hidden;
+        opacity: 0;
+
+        p {
+            padding-right: 27px;
+            padding-bottom: 20px;
+            padding-left: 60px;
+        }
+
+        &[aria-hidden="false"] {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    // .services__photo
+
+    &__photo {
+        display: block;
+    }
+}

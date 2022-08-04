@@ -307,4 +307,115 @@ body {
   font-size: 15px;
   line-height: 1.6;
 }
+
+.services {
+  padding: 80px 0;
+}
+
+.services__title {
+  font-family: 'Fraunces', serif;
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.services__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services__items {
+  width: 450px;
+}
+
+.services__item {
+  margin-bottom: 1px;
+  position: relative;
+  border-top: 1px solid #C2CDD8;
+  border-bottom: 1px solid #C2CDD8;
+}
+
+.services__button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 17px;
+  padding-right: 16px;
+  padding-bottom: 15px;
+  padding-left: 12px;
+  font-family: 'Fraunces', serif;
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #626A72;
+  position: relative;
+  z-index: 2;
+}
+
+.services__button[aria-expanded="true"] {
+  color: #1F1F1F;
+}
+
+.services__button::before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  background-image: url("../img/services/services1.png");
+}
+
+.services__button::after {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: auto;
+  background-image: url("../img/services/arrow-accordion.svg");
+}
+
+.services__text {
+  height: 0px;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.services__text p {
+  padding-right: 27px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+}
+
+.services__text[aria-hidden="false"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+.services__photo {
+  display: block;
+}
 /*# sourceMappingURL=main.css.map */
