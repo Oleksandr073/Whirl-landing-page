@@ -7,13 +7,21 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        background-image: url('../img/hero/hero-photo.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        // background-size: contain;
+        // background-size: 452px 422px;
     }
 
     // .hero__content
 
     &__content {
         width: 50%;
+        padding-top: 56px;
         padding-right: 40px;
+        padding-bottom: 56px;
     }
 
     // .hero__title
@@ -61,7 +69,7 @@
 
     // .hero__photo
 
-    &__photo {
-        display: block;
-    }
+    // &__photo {
+    //     display: block;
+    // }
 }

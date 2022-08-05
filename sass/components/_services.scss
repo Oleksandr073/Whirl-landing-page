@@ -3,27 +3,25 @@
 
     // .services__container
 
-    &__container {}
+    &__container {
+        background-image: url('../img/services/services-photo.png');
+        background-repeat: no-repeat;
+        background-position: bottom -60px right;
+        // background-size: contain;
+        // background-size: 45%;
+        // background-size: 481px 479px;
+    }
 
     // .services__title
 
     &__title {
-        // margin-bottom: 60px;
-        
-    }
-
-    // .services__content
-
-    &__content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        margin-bottom: 60px;        
     }
 
     // .services__list
 
     &__list {
-        width: 450px;
+        max-width: 450px;
     }
 
     // .services__item
@@ -134,11 +132,5 @@
             visibility: visible;
             opacity: 1;
         }
-    }
-
-    // .services__photo
-
-    &__photo {
-        display: block;
     }
 }

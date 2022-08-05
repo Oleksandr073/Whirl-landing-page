@@ -8,18 +8,16 @@
     // .pluses__container
 
     &__container {
-        display: flex;
-        justify-content: space-between;
+        background-image: url('../img/pluses/pluses-photo.png');
+        background-repeat: no-repeat;
+        background-size: contain;
     }
-
-    // .pluses__photo
-
-    &__photo {}
 
     // .pluses__content
 
     &__content {
         width: 40%;
+        margin-left: auto;
     }
 
     // .pluses__title

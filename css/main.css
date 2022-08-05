@@ -179,11 +179,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url("../img/hero/hero-photo.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .hero__content {
   width: 50%;
+  padding-top: 56px;
   padding-right: 40px;
+  padding-bottom: 56px;
 }
 
 .hero__title {
@@ -215,10 +220,6 @@ body {
   width: 11px;
   height: 20px;
   vertical-align: middle;
-}
-
-.hero__photo {
-  display: block;
 }
 
 .companies {
@@ -326,20 +327,18 @@ body {
   padding: 80px 0;
 }
 
-.services__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.services__container {
+  background-image: url("../img/services/services-photo.png");
+  background-repeat: no-repeat;
+  background-position: bottom -60px right;
+}
+
+.services__title {
+  margin-bottom: 60px;
 }
 
 .services__list {
-  width: 450px;
+  max-width: 450px;
 }
 
 .services__item {
@@ -438,10 +437,6 @@ body {
   opacity: 1;
 }
 
-.services__photo {
-  display: block;
-}
-
 .about {
   padding: 120px 0;
 }
@@ -509,16 +504,14 @@ body {
 }
 
 .pluses__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  background-image: url("../img/pluses/pluses-photo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .pluses__content {
   width: 40%;
+  margin-left: auto;
 }
 
 .pluses__title {
@@ -911,6 +904,7 @@ body {
 
 .footer__copy-link {
   color: #0070A0;
+  text-decoration: none;
 }
 
 .footer__list {
