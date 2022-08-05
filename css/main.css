@@ -181,7 +181,7 @@ body {
           align-items: center;
   background-image: url("../img/hero/hero-photo.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right 15px center;
 }
 
 .hero__content {
@@ -330,7 +330,7 @@ body {
 .services__container {
   background-image: url("../img/services/services-photo.png");
   background-repeat: no-repeat;
-  background-position: bottom -60px right;
+  background-position: bottom -60px right 50px;
 }
 
 .services__title {
@@ -507,6 +507,7 @@ body {
   background-image: url("../img/pluses/pluses-photo.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: 50px;
 }
 
 .pluses__content {
