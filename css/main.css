@@ -891,4 +891,41 @@ body {
   width: 11px;
   height: 20px;
 }
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 36px;
+  padding-bottom: 32px;
+  border-top: 1px solid #DEE5EB;
+}
+
+.footer__copy {
+  font-size: 13px;
+  line-height: 1.50769;
+}
+
+.footer__copy-link {
+  color: #0070A0;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer__icon {
+  width: 22px;
+  height: 22px;
+  fill: #000000;
+}
 /*# sourceMappingURL=main.css.map */
