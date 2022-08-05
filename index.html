@@ -253,7 +253,7 @@
             <ul class="blog__list">
                 <li class="blog__item">
                     <article class="post">
-                        <a class="post__wrapper" href="">
+                        <a class="post__wrapper" href="" target="_blank">
                             <img class="post__image" src="./img/post/post1.jpg" width="355" height="238" alt="Smartphone">
                             <div class="post__meta">
                                 <p class="post__tag">Improvements</p>
@@ -266,7 +266,7 @@
                 </li>
                 <li class="blog__item">
                     <article class="post">
-                        <a class="post__wrapper" href="">
+                        <a class="post__wrapper" href="" target="_blank">
                             <img class="post__image" src="./img/post/post2.jpg" width="355" height="238" alt="Notebook">
                             <div class="post__meta">
                                 <p class="post__tag">Tips & Tricks</p>
@@ -279,7 +279,7 @@
                 </li>
                 <li class="blog__item">
                     <article class="post">
-                        <a class="post__wrapper" href="">
+                        <a class="post__wrapper" href="" target="_blank">
                             <img class="post__image" src="./img/post/post3.jpg" width="355" height="238" alt="Deal">
                             <div class="post__meta">
                                 <p class="post__tag">News</p>
@@ -314,6 +314,60 @@
                     No credit-card required
                 </li>
             </ul>
+        </div>
+    </section>
+
+    <!-- information -->
+    <section class="information">
+        <div class="information__container container">
+            <div class="information__contact">
+                <a class="information__logo logo" href="" aria-label="Whirl logo">
+                    <svg class="logo__icon">
+                        <use href="./svg/sprite.svg#logo"></use>
+                    </svg>
+                </a>
+                <p class="information__contact-text">Built by <a class="information__contact-link" href="" target="_blank">Nikolai Bain</a>.</p>
+                <p class="information__contact-text">Powered by <a class="information__contact-link" href="" target="_blank">Webflow</a>.</p>
+            </div>
+            <ul class="information__menu">
+                <li class="information__menu-item">
+                    <h2 class="information__heading">Info</h2>
+                    <ul class="information__list">
+                        <li class="information__item"><a class="information__link" href="">Features</a></li>
+                        <li class="information__item"><a class="information__link" href="">Pricing</a></li>
+                        <li class="information__item"><a class="information__link" href="">Blog</a></li>
+                        <li class="information__item"><a class="information__link" href="">Support</a></li>
+                        <li class="information__item"><a class="information__link" href="">Terms & Conditions</a></li>
+                        <li class="information__item"><a class="information__link" href="">Privacy Policy</a></li>
+                    </ul>
+                </li>
+                <li class="information__menu-item">
+                    <h2 class="information__heading">Admin</h2>
+                    <ul class="information__list">
+                        <li class="information__item"><a class="information__link" href="">Style Guide</a></li>
+                        <li class="information__item"><a class="information__link" href="">Licenses</a></li>
+                        <li class="information__item"><a class="information__link" href="">Instructions</a></li>
+                        <li class="information__item"><a class="information__link" href="">Changelog</a></li>
+                        <li class="information__item"><a class="information__link" href="">Password</a></li>
+                        <li class="information__item"><a class="information__link" href="">404</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="information__form" autocomplete="off">
+                <h2 class="information__heading">Newsletter</h2>
+                <p class="information__form-text">Sign up for the latest news, company insights, and Whirl updates.</p>
+                <div class="information__form-wrapper">
+                    <div class="information__form-field">
+                        <input class="information__input" id="email" type="email" placeholder=" " required>
+                        <label class="information__label" for="email">Your email</label>
+                    </div>
+                    <button class="information__button" type="submit" aria-label="Send my email">
+                        <svg class="information__arrow" aria-hidden="true">
+                            <use href="./svg/sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </section>
 
