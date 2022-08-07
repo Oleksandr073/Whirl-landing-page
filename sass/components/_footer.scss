@@ -23,6 +23,11 @@
         color: $accentColor;
 
         text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
     }
 
     // .footer__list
@@ -42,7 +47,13 @@
 
     // .footer__link
 
-    &__link {}
+    &__link {
+
+        &:hover .footer__icon,
+        &:focus .footer__icon{
+            fill: $accentColor;
+        }
+    }
 
     // .footer__icon
 
@@ -51,5 +62,7 @@
         height: 22px;
 
         fill: #000000;
+
+        transition: fill 200ms ease;
     }
 }

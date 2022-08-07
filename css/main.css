@@ -152,6 +152,10 @@ body {
   text-decoration: none;
 }
 
+.header__nav-link:hover, .header__nav-link:focus {
+  text-decoration: underline;
+}
+
 .header__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,10 +221,19 @@ body {
   text-decoration: none;
 }
 
+.hero__link:hover .hero__arrow, .hero__link:focus .hero__arrow {
+  -webkit-transform: translateX(7px);
+          transform: translateX(7px);
+}
+
 .hero__arrow {
   width: 11px;
   height: 20px;
   vertical-align: middle;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
 }
 
 .companies {
@@ -259,8 +272,15 @@ body {
   display: inline-block;
 }
 
+.companies__link:hover .companies__logo,
+.companies__link:focus .companies__logo {
+  fill: #0070A0;
+}
+
 .companies__logo {
   fill: #969FA4;
+  -webkit-transition: fill 250ms ease;
+  transition: fill 250ms ease;
 }
 
 .advantage {
@@ -673,6 +693,10 @@ body {
   text-decoration: none;
 }
 
+.blog__all:hover, .blog__all:focus {
+  text-decoration: underline;
+}
+
 .blog__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -773,6 +797,10 @@ body {
   text-decoration: none;
 }
 
+.information__contact-link:hover, .information__contact-link:focus {
+  text-decoration: underline;
+}
+
 .information__menu {
   width: 40%;
   display: -webkit-box;
@@ -812,6 +840,10 @@ body {
   line-height: 1.42857;
   color: #626A72;
   text-decoration: none;
+}
+
+.information__link:hover, .information__link:focus {
+  text-decoration: underline;
 }
 
 .information__form {
@@ -909,6 +941,10 @@ body {
   text-decoration: none;
 }
 
+.footer__copy-link:hover, .footer__copy-link:focus {
+  text-decoration: underline;
+}
+
 .footer__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -919,9 +955,16 @@ body {
   margin-right: 20px;
 }
 
+.footer__link:hover .footer__icon,
+.footer__link:focus .footer__icon {
+  fill: #0070A0;
+}
+
 .footer__icon {
   width: 22px;
   height: 22px;
   fill: #000000;
+  -webkit-transition: fill 200ms ease;
+  transition: fill 200ms ease;
 }
 /*# sourceMappingURL=main.css.map */

@@ -35,6 +35,11 @@
         color: $accentColor;
 
         text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
     }
 
     // .information__menu
@@ -91,6 +96,11 @@
         color: #626A72;
 
         text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
     }
 
     // .information__form

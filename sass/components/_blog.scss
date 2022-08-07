@@ -29,6 +29,11 @@
         color: #0070A0;
 
         text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
     }
 
     // .blog__list

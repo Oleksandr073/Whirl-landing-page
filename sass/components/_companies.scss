@@ -40,6 +40,11 @@
 
     &__link {
         display: inline-block;
+
+        &:hover .companies__logo,
+        &:focus .companies__logo {
+            fill: $accentColor;
+        }
     }
 
     // .companies__logo
@@ -48,5 +53,7 @@
         // height: 36px;
 
         fill: #969FA4;
+
+        transition: fill 250ms ease;
     }
 }

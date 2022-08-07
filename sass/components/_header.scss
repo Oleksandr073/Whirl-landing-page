@@ -44,6 +44,11 @@
         color: #33383F;
 
         text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
     }
 
     // .header__buttons
