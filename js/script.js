@@ -1,5 +1,17 @@
 // services accordion
 const accordionButtons = document.querySelectorAll('.services__button');
+const accordionContents = document.querySelectorAll('.services__text');
+
+function setHeightAccordionWrapper() {
+    const maxHeightContent =
+        Math.max(...Array.from(accordionContents)
+        .map(accordionContent => accordionContent.scrollHeight));
+
+    const accordionWrapper = document.querySelector('.services__list');
+    accordionWrapper.style.minHeight = accordionWrapper.scrollHeight + maxHeightContent + 5 + 'px';
+}
+
+setHeightAccordionWrapper();
 
 function hideContent(button) {
     button.setAttribute('aria-expanded', 'false');
@@ -29,7 +41,9 @@ accordionButtons.forEach((accordionButton, index) => {
         })
 
         showContent(this);
-        let activeTextHeight = accordionButton.nextElementSibling.firstElementChild.getBoundingClientRect().height;
-        accordionButton.nextElementSibling.style.height = `${activeTextHeight}px`;
+        
+        const accordionContent = accordionButton.nextElementSibling;
+        let activeContentHeight = accordionContent.scrollHeight;
+        accordionContent.style.height = `${activeContentHeight}px`;
     })
 });
