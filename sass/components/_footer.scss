@@ -10,7 +10,7 @@
 
         border-top: 1px solid #DEE5EB;
 
-        @media screen and (max-width: 768px) {
+        @include mediaMax($medium) {
             flex-wrap: wrap-reverse;
         }
     }
@@ -41,7 +41,7 @@
     &__list {
         display: flex;
 
-        @media screen and (max-width: 768px) {
+        @include mediaMax($medium) {
             margin-bottom: 20px;
         }
     }

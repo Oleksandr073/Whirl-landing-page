@@ -8,14 +8,14 @@
     // .pluses__container
 
     &__container {
-        @media screen and (min-width: 769px) {
+        @include mediaMin($medium) {
             background-image: url('../img/pluses/pluses-photo.png');
             background-repeat: no-repeat;
             background-size: 40%;
             background-position: 50px;
         }
 
-        @media screen and (min-width: 993px) {
+        @include mediaMin($large) {
             background-size: contain;
         }
     }
@@ -26,11 +26,11 @@
         width: 40%;
         margin-left: auto;
 
-        @media screen and (max-width: 992px) {
+        @include mediaMax($large) {
             width: 50%;
         }
 
-        @media screen and (max-width: 768px) {
+        @include mediaMax($medium) {
             width: 100%;
         }
     }

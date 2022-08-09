@@ -7,7 +7,7 @@
         padding-top: 64px;
         padding-bottom: 50px;
 
-        @media screen and (min-width: 577px) {
+        @include mediaMin($small) {
             padding-right: 64px;
             padding-left: 64px;
         }
@@ -21,11 +21,11 @@
         width: 50%;
         margin-bottom: 18px;
 
-        @media screen and (max-width: 992px) {
+        @include mediaMax($large) {
             width: 70%;
         }
 
-        @media screen and (max-width: 768px) {
+        @include mediaMax($medium) {
             width: 100%;
         }
     }
@@ -38,11 +38,11 @@
 
         @include fontSizeLineHeight(18px, 27px);
 
-        @media screen and (max-width: 992px) {
+        @include mediaMax($large) {
             width: 70%;
         }
 
-        @media screen and (max-width: 768px) {
+        @include mediaMax($medium) {
             width: 100%;
         }
     }
@@ -66,7 +66,7 @@
     &__item {
         margin: 16px;
 
-        @media screen and (max-width: 576px) {
+        @include mediaMax($small) {
             margin: 8px;
         }
 

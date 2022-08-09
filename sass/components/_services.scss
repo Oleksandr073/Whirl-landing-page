@@ -4,13 +4,10 @@
     // .services__container
 
     &__container {
-        @media screen and (min-width: 993px) {
+        @include mediaMin($large) {
             background-image: url('../img/services/services-photo.png');
             background-repeat: no-repeat;
             background-position: bottom -60px right 50px;
-            // background-size: contain;
-            // background-size: 45%;
-            // background-size: 481px 479px;
         }
     }
 
@@ -20,7 +17,7 @@
         width: 55%;
         margin-bottom: 60px;    
         
-        @media screen and (max-width: 992px) {
+        @include mediaMax($large) {
             width: 100%;
         }
     }
@@ -31,7 +28,7 @@
         max-width: 450px;
         // min-height: 400px;
 
-        @media screen and (max-width: 992px) {
+        @include mediaMax($large) {
             max-width: 576px;
             margin: 0 auto;
         }

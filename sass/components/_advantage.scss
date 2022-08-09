@@ -11,7 +11,7 @@
         display: flex;
         flex-wrap: wrap;
 
-        @media screen and (max-width: 768px) {
+        @include mediaMax($medium) {
             max-width: 576px;
             margin: 0 auto;
         }
@@ -23,7 +23,7 @@
         padding: 32px 32px 40px 32px;
         flex-basis: calc((100% - 32px * 2) / 3); //
 
-        @media screen and (max-width: 768px) {
+        @include mediaMax($medium) {
             flex-basis: 100%;
 
             &:not(:last-child) {
@@ -31,7 +31,7 @@
             }
         }
 
-        @media screen and (min-width: 769px) {
+        @include mediaMin($medium) {
             &:not(:last-child) {
                 margin-right: 32px;
             }

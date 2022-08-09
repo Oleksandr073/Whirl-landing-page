@@ -33,11 +33,11 @@
         flex-basis: calc((100% - 4 * 64px) / 4);
         margin: 32px;
 
-        @media screen and (max-width: 992px) {
+        @include mediaMax($large) {
             flex-basis: calc((100% - 2 * 64px) / 2);
         }
 
-        @media screen and (max-width: 576px) {
+        @include mediaMax($small) {
             flex-basis: 100%;
             flex-direction: column;
             // max-width: 576px;

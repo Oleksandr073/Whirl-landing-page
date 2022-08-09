@@ -12,7 +12,7 @@
     &__title {
         margin-bottom: 24px;
 
-        @media screen and (max-width: 576px) {
+        @include mediaMax($small) {
             margin-bottom: 35px;
         }
 
@@ -30,7 +30,7 @@
         align-items: center;
         flex-wrap: wrap;
 
-        @media screen and (max-width: 768px) {
+        @include mediaMax($medium) {
             
         }
     }
@@ -40,13 +40,13 @@
     &__item {
         // height: 36px;
 
-        @media screen and (min-width: 769px) {
+        @include mediaMin($medium) {
             &:not(:last-child) {
                 margin-right: 60px;
             }
         }
 
-        @media screen and (max-width: 768px) and (min-width: 577px) {
+        @include mediaMaxMin($medium, $small) {
             flex-basis: calc((100% - 60px) / 2);
 
             &:nth-child(2n + 1) {
@@ -58,7 +58,7 @@
             }
         }
 
-        @media screen and (max-width: 576px) {
+        @include mediaMax($small) {
             flex-basis: 100%;
 
             &:not(:last-child) {

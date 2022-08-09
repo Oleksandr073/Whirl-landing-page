@@ -14,11 +14,11 @@
         // background-size: contain;
         // background-size: 452px 422px;
 
-        @media screen and (max-width: 992px) {
+        @include mediaMax($large) {
             background-image: linear-gradient(rgba(245, 245, 245, 0.8), rgba(255, 255, 255, 0.8)), url('../img/hero/hero-photo.png');
         }
 
-        @media screen and (max-width: 576px) {
+        @include mediaMax($small) {
             background-position: center;
         }
     }
@@ -31,11 +31,11 @@
         padding-right: 40px;
         padding-bottom: 56px;
 
-        @media screen and (max-width: 992px) {
+        @include mediaMax($large) {
             width: 75%;
         }
 
-        @media screen and (max-width: 768px) {
+        @include mediaMax($medium) {
             width: 100%;
             padding-right: 0;
         }
@@ -59,7 +59,7 @@
 
         @include fontSizeLineHeight(20px, 30px);
 
-        @media screen and (max-width: 768px) {
+        @include mediaMax($medium) {
             width: 100%;
             padding-right: 100px;
         }

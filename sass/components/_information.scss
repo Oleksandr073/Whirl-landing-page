@@ -15,7 +15,7 @@
         flex-grow: 1;
         margin-right: 16px;
 
-        @media screen and (max-width: 768px) {
+        @include mediaMax($medium) {
             flex-basis: 100%;
             margin-right: 0;
             margin-bottom: 30px;
@@ -56,11 +56,11 @@
         display: flex;
         margin-right: 16px;
 
-        @media screen and (max-width: 768px) {
+        @include mediaMax($medium) {
             flex-basis: 50%;
         }
 
-        @media screen and (max-width: 576px) {
+        @include mediaMax($small) {
             flex-basis: 100%;
             margin-right: 0;
             margin-bottom: 30px;
@@ -127,11 +127,11 @@
     &__form {
         flex-basis: 20%;
 
-        @media screen and (max-width: 768px) {
+        @include mediaMax($medium) {
             flex-grow: 1;
         }
 
-        @media screen and (max-width: 576px) {
+        @include mediaMax($small) {
             // flex-basis: 60%;
             flex-basis: 100%;
             max-width: 320px;

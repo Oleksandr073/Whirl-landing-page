@@ -14,11 +14,11 @@
         width: 25%;
         // margin-right: 100px;
 
-        @media screen and (min-width: 993px) {
+        @include mediaMin($large) {
             margin-right: 5%;
         }
 
-        @media screen and (max-width: 992px) {
+        @include mediaMax($large) {
             width: 100%;
             margin-bottom: 30px;
         }
@@ -29,12 +29,12 @@
     &__list {
         width: 70%;
 
-        @media screen and (min-width: 769px) {
+        @include mediaMin($medium) {
             display: flex;
         }
         // flex-wrap: wrap;
 
-        @media screen and (max-width: 992px) {
+        @include mediaMax($large) {
             width: 100%;
         }
     }
@@ -43,7 +43,7 @@
 
     &__item {
 
-        @media screen and (min-width: 769px) {
+        @include mediaMin($medium) {
             flex-basis: calc((100% - 32px * 2) / 3); //
             
             &:not(:last-child) {
@@ -51,7 +51,7 @@
             }
         }
 
-        @media screen and (max-width: 768px) {
+        @include mediaMax($medium) {
             max-width: 576px;
             margin: 0 auto;
 

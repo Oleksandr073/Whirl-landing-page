@@ -14,7 +14,7 @@
     &__nav {
         display: flex;
 
-        @media screen and (max-width: 768px) {
+        @include mediaMax($medium) {
             display: none;
         }
     }
@@ -62,7 +62,7 @@
     &__buttons {
         display: flex;
 
-        @media screen and (max-width: 768px) {
+        @include mediaMax($medium) {
             display: none;
         }
     }

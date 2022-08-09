@@ -44,7 +44,7 @@
         flex-wrap: wrap;
         margin: -16px;
 
-        @media screen and (max-width: 768px) {
+        @include mediaMax($medium) {
             justify-content: center;
         }
     }
@@ -56,7 +56,7 @@
         // width: 33.3333%;
         margin: 16px;
 
-        @media screen and (max-width: 768px) {
+        @include mediaMax($medium) {
             flex-basis: 100%;
             max-width: 576px;
             // margin: 16px auto;
