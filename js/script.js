@@ -1,8 +1,8 @@
 // services accordion
 const accordionButtons = document.querySelectorAll('.services__button');
-const accordionContents = document.querySelectorAll('.services__text');
 
 function setHeightAccordionWrapper() {
+    const accordionContents = document.querySelectorAll('.services__text');
     const maxHeightContent =
         Math.max(...Array.from(accordionContents)
         .map(accordionContent => accordionContent.scrollHeight));

@@ -15,21 +15,32 @@
 
     &__subtitle {
         margin-bottom: 65px;
+
+        @include fontSizeLineHeight(18px, 27px);
     }
 
     // .tasks__list
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
+        margin: -32px;
     }
 
     // .tasks__item
 
     &__item {
-        flex-basis: 25%;
+        flex-basis: calc((100% - 4 * 64px) / 4);
+        margin: 32px;
 
-        &:not(:last-child) {
-            margin-right: 64px;
+        @media screen and (max-width: 992px) {
+            flex-basis: calc((100% - 2 * 64px) / 2);
+        }
+
+        @media screen and (max-width: 576px) {
+            flex-basis: 100%;
+            flex-direction: column;
+            // max-width: 576px;
         }
 
         &::before {

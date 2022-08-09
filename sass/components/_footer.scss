@@ -9,11 +9,17 @@
         padding-bottom: 32px;
 
         border-top: 1px solid #DEE5EB;
+
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap-reverse;
+        }
     }
 
     // .footer__copy
 
     &__copy {
+        padding-right: 20px;
+
         @include fontSizeLineHeight(13px, 19.6px);
     }
 
@@ -34,6 +40,10 @@
 
     &__list {
         display: flex;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 20px;
+        }
     }
 
     // .footer__item
@@ -63,6 +73,6 @@
 
         fill: #000000;
 
-        transition: fill 200ms ease;
+        transition: fill $transitionDurationFunction;
     }
 }

@@ -13,6 +13,10 @@
 
     &__nav {
         display: flex;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
     }
 
     // .header__logo
@@ -45,9 +49,11 @@
 
         text-decoration: none;
 
+        transition: color $transitionDurationFunction;
+
         &:hover,
         &:focus {
-            text-decoration: underline;
+            color: $accentColor;
         }
     }
 
@@ -55,6 +61,10 @@
 
     &__buttons {
         display: flex;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
     }
 
     // .header__button

@@ -4,18 +4,25 @@
     // .services__container
 
     &__container {
-        background-image: url('../img/services/services-photo.png');
-        background-repeat: no-repeat;
-        background-position: bottom -60px right 50px;
-        // background-size: contain;
-        // background-size: 45%;
-        // background-size: 481px 479px;
+        @media screen and (min-width: 993px) {
+            background-image: url('../img/services/services-photo.png');
+            background-repeat: no-repeat;
+            background-position: bottom -60px right 50px;
+            // background-size: contain;
+            // background-size: 45%;
+            // background-size: 481px 479px;
+        }
     }
 
     // .services__title
 
     &__title {
-        margin-bottom: 60px;        
+        width: 55%;
+        margin-bottom: 60px;    
+        
+        @media screen and (max-width: 992px) {
+            width: 100%;
+        }
     }
 
     // .services__list
@@ -23,6 +30,11 @@
     &__list {
         max-width: 450px;
         // min-height: 400px;
+
+        @media screen and (max-width: 992px) {
+            max-width: 576px;
+            margin: 0 auto;
+        }
     }
 
     // .services__item
@@ -70,8 +82,16 @@
         position: relative;
         z-index: 2;
 
-        &[aria-expanded="true"] {
+        transition: color $transitionDurationFunction;
+
+        &[aria-expanded="true"],
+        &:hover,
+        &:focus {
             color: $textColor;
+        }
+
+        p {
+            padding-right: 15px;
         }
 
         &::before {

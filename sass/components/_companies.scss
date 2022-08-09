@@ -12,6 +12,10 @@
     &__title {
         margin-bottom: 24px;
 
+        @media screen and (max-width: 576px) {
+            margin-bottom: 35px;
+        }
+
         @include fontSizeLineHeight(24px, 38px);
         font-weight: 400;
 
@@ -24,6 +28,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 768px) {
+            
+        }
     }
 
     // .companies__item
@@ -31,8 +40,30 @@
     &__item {
         // height: 36px;
 
-        &:not(:last-child) {
-            margin-right: 60px;
+        @media screen and (min-width: 769px) {
+            &:not(:last-child) {
+                margin-right: 60px;
+            }
+        }
+
+        @media screen and (max-width: 768px) and (min-width: 577px) {
+            flex-basis: calc((100% - 60px) / 2);
+
+            &:nth-child(2n + 1) {
+                margin-right: 60px;
+            }
+
+            &:nth-child(-n + 2) {
+                margin-bottom: 30px;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            flex-basis: 100%;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
         }
     }
 
@@ -54,6 +85,6 @@
 
         fill: #969FA4;
 
-        transition: fill 250ms ease;
+        transition: fill $transitionDurationFunction;
     }
 }

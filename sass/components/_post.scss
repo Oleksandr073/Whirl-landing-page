@@ -4,6 +4,7 @@
     // .post__wrapper
 
     &__wrapper {
+        width: 100%;
         display: inline-block;
 
         color: inherit;
@@ -13,7 +14,10 @@
 
     // .post__image
 
-    &__image {}
+    &__image { // :D
+        width: 100%;
+        height: 100%;
+    }
 
     // .post__meta
 

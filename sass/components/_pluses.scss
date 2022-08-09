@@ -8,10 +8,16 @@
     // .pluses__container
 
     &__container {
-        background-image: url('../img/pluses/pluses-photo.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 50px;
+        @media screen and (min-width: 769px) {
+            background-image: url('../img/pluses/pluses-photo.png');
+            background-repeat: no-repeat;
+            background-size: 40%;
+            background-position: 50px;
+        }
+
+        @media screen and (min-width: 993px) {
+            background-size: contain;
+        }
     }
 
     // .pluses__content
@@ -19,6 +25,14 @@
     &__content {
         width: 40%;
         margin-left: auto;
+
+        @media screen and (max-width: 992px) {
+            width: 50%;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
     }
 
     // .pluses__title
@@ -66,5 +80,6 @@
 
     &__button {
         background-color: transparent;
+        border-color: transparent;
     }
 }

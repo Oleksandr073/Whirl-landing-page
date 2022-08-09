@@ -1,9 +1,10 @@
 .btn {
-    padding: 6px 20px;
+    padding: 5px 19px; // 6 20 (1 border)
     border: none;
 
     color: #ffffff;
     background: $accentColor;
+    border: 1px solid $accentColor;
 
     cursor: pointer;
 
@@ -12,9 +13,25 @@
 
     letter-spacing: inherit;
 
+    transition: all $transitionDurationFunction;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+        background: #ffffff;
+    }
+
     &--secondary {
         color: $accentColor;
         background: #ffffff;
+        border: 1px solid transparent;
+
+        &:hover,
+        &:focus {
+            color: #ffffff;
+            background: $accentColor;
+            border: 1px solid $accentColor;
+        }
     }
 
     &--big {
