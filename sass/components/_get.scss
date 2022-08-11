@@ -1,6 +1,10 @@
 .get {
     padding: 80px 0;
 
+    @include mediaMax($medium) {
+        padding: 40px 0;
+    }
+
     // .get__container
 
     &__container {
@@ -58,7 +62,11 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        margin: -16px
+        margin: -16px;
+
+        @include mediaMax($small) {
+            margin: -8px;
+        }
     }
 
     // .get__item

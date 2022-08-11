@@ -2,4 +2,12 @@
     font-family: 'Fraunces', serif;
     @include fontSizeLineHeight(25px, 31.25px);
     font-weight: 400;
+
+    @include mediaMax($medium) {
+        font-size: 22px;
+    }
+
+    // @include mediaMax($small) {
+    //     font-size: 32px;
+    // }
 }

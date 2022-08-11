@@ -1,6 +1,10 @@
 .tasks {
     padding: 120px 0;
 
+    @include mediaMax($medium) {
+        padding: 60px 0;
+    }
+
     // .tasks__container
 
     &__container {}

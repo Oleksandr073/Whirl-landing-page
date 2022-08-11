@@ -1,6 +1,10 @@
 .advantage {
     padding: 120px 0;
 
+    @include mediaMax($medium) {
+        padding: 60px 0;
+    }
+
     // .advantage__container
 
     &__container {}

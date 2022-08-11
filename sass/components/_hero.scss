@@ -1,6 +1,10 @@
 .hero {
     padding: 70px 0 92px 0;
 
+    @include mediaMax($medium) {
+        padding: 50px 0 70px 0;
+    }
+
     // .hero__container
 
     &__container {
@@ -11,8 +15,6 @@
         background-image: linear-gradient(rgba(245, 245, 245, 0), rgba(255, 255, 255, 0)), url('../img/hero/hero-photo.png');
         background-repeat: no-repeat;
         background-position: right 15px center;
-        // background-size: contain;
-        // background-size: 452px 422px;
 
         @include mediaMax($large) {
             background-image: linear-gradient(rgba(245, 245, 245, 0.8), rgba(255, 255, 255, 0.8)), url('../img/hero/hero-photo.png');
@@ -49,6 +51,10 @@
         font-family: 'Fraunces', serif;
         font-weight: 400;
         @include fontSizeLineHeight(58px, 64px);
+
+        @include mediaMax($medium) {
+            font-size: 48px;
+        }
     }
 
     // .hero__subtitle
@@ -65,16 +71,26 @@
         }
     }
 
+    // .hero__items
+
+    &__items {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: -20px;
+    }
+
     // .hero__button
 
     &__button {
-        margin-right: 24px;
+        margin: 20px;
+        // margin-right: 24px;
     }
 
     // .hero__link
 
     &__link {
-        margin-right: 8px;
+        margin: 20px;
 
         color: $accentColor;
 
@@ -95,6 +111,7 @@
     &__arrow {
         width: 11px;
         height: 20px;
+        margin-left: 8px;
         vertical-align: middle;
 
         transition: transform 250ms ease-in;
