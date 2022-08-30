@@ -990,10 +990,19 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 50px;
+  margin-top: -20px;
+  margin-right: -20px;
+}
+
+.blog__title {
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 .blog__all {
   display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
   padding: 8px 32px;
   font-size: 17px;
   line-height: 1.58824;

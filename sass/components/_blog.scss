@@ -17,16 +17,23 @@
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 50px;
+        margin-top: -20px;
+        margin-right: -20px;
     }
 
     // .blog__title
 
-    &__title {}
+    &__title {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
 
     // .blog__all
 
     &__all {
         display: inline-block;
+        margin-top: 20px;
+        margin-right: 20px;
         padding: 8px 32px;
 
         @include fontSizeLineHeight(17px, 27px);
